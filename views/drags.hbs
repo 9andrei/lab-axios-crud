@@ -1,0 +1,15 @@
+<h1>Drag Queens</h1>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  {{#each drags as |drag|}} 
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{drag.name}}</h5>
+          <p class="card-text">Season {{drag.season}}</p>
+          <a class="btn btn-primary" href="/drags/{{drag.id}}" role="button">Ver</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

@@ -1,0 +1,94 @@
+{
+  "drags": [
+    {
+      "id": 1,
+      "name": "Bianca del Rio",
+      "season": 6,
+      "allStars": false
+    },
+    {
+      "id": 2,
+      "name": "Ongina",
+      "season": 1,
+      "allStars": true
+    },
+    {
+      "id": 3,
+      "name": "Raven",
+      "season": 2,
+      "allStars": true
+    },
+    {
+      "id": 4,
+      "name": "Shangela",
+      "season": 3,
+      "allStars": true
+    },
+    {
+      "id": 5,
+      "name": "Phi Phi O'hara",
+      "season": 4,
+      "allStars": true
+    },
+    {
+      "id": 6,
+      "name": "Alaska",
+      "season": 5,
+      "allStars": true
+    },
+    {
+      "id": 7,
+      "name": "Adore Delano",
+      "season": 6,
+      "allStars": true
+    },
+    {
+      "id": 8,
+      "name": "Violet Chachki",
+      "season": 7,
+      "allStars": false
+    },
+    {
+      "id": 9,
+      "name": "Bob the Drag Queen",
+      "season": 8,
+      "allStars": false
+    },
+    {
+      "id": 10,
+      "name": "Sasha Velour",
+      "season": 9,
+      "allStars": false
+    },
+    {
+      "id": 11,
+      "name": "Aquaria",
+      "season": 10,
+      "allStars": false
+    },
+    {
+      "id": 12,
+      "name": "Yvie Odly",
+      "season": 11,
+      "allStars": false
+    },
+    {
+      "id": 13,
+      "name": "Gigi Goode",
+      "season": 12,
+      "allStars": false
+    },
+    {
+      "id": 14,
+      "name": "Rosé",
+      "season": 13,
+      "allStars": false
+    },
+    {
+      "name": "Sonique",
+      "season": 1,
+      "allStars": true,
+      "id": 15
+    }
+  ]
+}
