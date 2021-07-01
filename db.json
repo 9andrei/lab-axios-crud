@@ -10,19 +10,19 @@
       "id": 2,
       "name": "Ongina",
       "season": 1,
-      "allStars": true
+      "allStars": false
     },
     {
       "id": 3,
       "name": "Raven",
       "season": 2,
-      "allStars": true
+      "allStars": false
     },
     {
       "id": 4,
       "name": "Shangela",
       "season": 3,
-      "allStars": true
+      "allStars": false
     },
     {
       "id": 5,
@@ -94,6 +94,12 @@
       "name": "Laganja Stranja",
       "season": "6",
       "id": 16
+    },
+    {
+      "name": "Jiggly Caliente",
+      "season": "4",
+      "id": 17,
+      "allStars": true
     }
   ]
 }

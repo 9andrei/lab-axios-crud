@@ -3,13 +3,24 @@
 <div class="row row-cols-1 row-cols-md-2 g-4">
   {{#each drags as |drag|}} 
     <div class="col">
-      <div class="card">
+      <div class="card h-100">
         <div class="card-body">
           <h5 class="card-title">{{drag.name}}</h5>
           <p class="card-text">Season {{drag.season}}</p>
-          <a class="btn btn-primary" href="/drags/{{drag.id}}" role="button">Ver</a>
+          {{#if drag.allStars}}
+          <p>Appeared on All Stars</p>
+
+          <button type="button" id="{{drag.id}}" value="disable" class="btn btn-warning btn-activate-allstars">Not All Stars</button>
+          {{else}}
+          
+          <button type="button" id="{{drag.id}}" value="activate" class="btn btn-success btn-activate-allstars">All Stars</button>
+          {{/if}}
+          <a class="btn btn-primary" href="/drags/{{drag.id}}" role="button">Show queen</a>
+          <button type="button" value="{{drag.id}}" class="btn btn-danger delete-queen">Delete queen</button>
         </div>
       </div>
     </div>
   {{/each}}
 </div>
+
+<script src="/js/drags.js"></script>
