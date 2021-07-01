@@ -89,6 +89,11 @@
       "season": 1,
       "allStars": true,
       "id": 15
+    },
+    {
+      "name": "Laganja Stranja",
+      "season": "6",
+      "id": 16
     }
   ]
 }
