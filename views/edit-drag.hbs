@@ -1,0 +1,13 @@
+<h1>Edit {{drag.name}}</h1>
+
+<form action="/drags/{{drag.id}}/edit" method="POST">
+  <div class="mb-3">
+    <label for="name" class="form-label">Edit Drag Queen</label>
+    <input type="text" value="{{drag.name}}" class="form-control" id="name" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="season" class="form-label">Season she compited on</label>
+    <input type="number" value="{{drag.season}}" class="form-control" id="season" name="season">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

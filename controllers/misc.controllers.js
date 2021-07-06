@@ -11,8 +11,6 @@ module.exports.index = (req, res, next) => {
   module.exports.drags = (req, res, next) => {
     http.get("/drags")
       .then((response) => {
-        console.log(response.data)
-
         res.render("drags", { drags: response.data })
       })
       .catch(error => console.error(error))
@@ -22,8 +20,6 @@ module.exports.index = (req, res, next) => {
     const id = req.params.id;
     http.get(`/drags/${id}`)
       .then((response) => {
-        console.log(response.data)
-
         res.render("detail", {drag: response.data})
       })
       .catch((error) => {
@@ -48,4 +44,26 @@ module.exports.index = (req, res, next) => {
       })
       .catch((e) => console.log(e))
     }
+  };
+
+  module.exports.editDrag = (req, res, next) => {
+    const { id } = req.params;
+
+  http.get(`/drags/${id}`)
+    .then((response) => {
+      res.render("edit-drag", { drag: response.data });
+    })
+    .catch((error) => next(error));
+  };
+
+
+  module.exports.doEditDrag = (req, res, next) => {
+    const { id } = req.params;
+
+    http.patch(`/drags/${id}`, {
+      name: req.body.name,
+      season: req.body.season
+    })
+    .then(() => res.redirect(`/drags`))
+    .catch(error => next(error));
   }
